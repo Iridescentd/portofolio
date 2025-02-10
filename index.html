@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Software Engineer Student</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-6 py-3 bg-white dark:bg-gray-800 shadow-md">
+
+        <div class="flex items-center">
+            <span class="ml-2 text-lg font-bold">Skyfal</span>
+        </div>
+
+
+        <div class="hidden md:flex space-x-6">
+            <a href="#profile" class="px-4 hover:text-blue-500 hover">Profile</a>
+            <a href="#competencies" class="px-4 hover:text-blue-500">Competencies</a>
+            <a href="#education" class="px-4 hover:text-blue-500">Education</a>
+            <a href="#projects" class="px-4 hover:text-blue-500">Projects</a>
+            <a href="#contact" class="px-4 hover:text-blue-500">Contact</a>
+        </div>
+
+
+        <div class="flex items-center space-x-4">
+            <a href="https://github.com" target="_blank" class="flex items-center space-x-1 hover:text-blue-500">
+                <span>GitHub</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 9l3.536 3.536a2 2 0 01-2.828 2.828L11 13.828m1.172-1.172L9 9"></path>
+                </svg>
+            </a>
+
+            <button onclick="toggleDarkMode()" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m4.949-15.071l-.707.707m-9.192 9.192l-.707.707m13.656 0l-.707-.707m-9.192-9.192l-.707-.707M4 12H3m18 0h-1m-2 7.071l.707.707m-13.656 0l.707-.707m0-9.192l-.707-.707m9.192-9.192l-.707-.707"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Profile -->
+    <section id="profile" class="max-w-3xl mx-auto bg-white p-6 mt-6 rounded-lg shadow-lg dark:bg-gray-700 dark:text-white flex items-center space-x-6">
+        <img src="profile.jpg" alt="Profile Picture" class="w-36 h-36 mx-auto rounded-t-lg">
+        <div>
+            <h1 class="text-2xl font-bold mt-4">Muhammad Naufal Pratama</h1>
+            <p class="text-blue-700 dark:text-blue-300">SMK Negeri 8 Malang | Software Developer & Graphic Designer</p>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">A passionate <strong>Software Engineering student</strong> at <strong>SMK Negeri  8 Malang</strong>, eager to explore the world of <strong>web & mobile development, IoT, and software development</strong>. I enjoy transforming concepts into functional and well-structured solutions, focusing on clarity and performance in every line of code.</p>
+        </div>
+        
+    </section>
+
+     <!-- Education -->
+    <section id="education" class="max-w-3xl mx-auto bg-white p-6 mt-6 rounded-lg shadow-lg dark:bg-gray-700">
+        <h2 class="text-xl font-bold mb-4">Education</h2>
+        <p><strong>SMP Negeri 16 Malang</strong> - Graduated from Middle-School in 2023 and decided continuing education to Vocational High School. (2020 - 2023)</p>
+        <p><strong>SMK Negeri 8 Malang</strong> - Majored in software engineering (2023 - 2026)</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-3xl mx-auto bg-white p-6 mt-6 rounded-lg shadow-lg dark:bg-gray-700">
+        <h2 class="text-xl font-bold mb-4">Projects</h2>
+        <div class="border-l-4 border-gray-900 pl-4 mb-4">
+            <h3 class="font-semibold">🚀 Porto Assessment Rakryan</h3>
+            <p class="text-gray-700 dark:text-gray-300">Hasil ujian asesmen Rakryan slicing Figma.</p>
+            <a href="https://github.com/Iridescentd/porto-naufal-rakryan.git">Visit</a>
+
+        </div>
+        <div class="border-l-4 border-gray-900 pl-4 mb-4">
+            <h3 class="font-semibold">📱 Simple Flutter Project (PCBay)</h3>
+            <p class="text-gray-700 dark:text-gray-300">Hasil APK e-Commerce sederhana</p>
+            <a href="https://github.com/Iridescentd/PCBay.git" target="_blank">Visit</a>
+        </div>
+    </section>
+
+    <!-- Competencies -->
+    <section id="competencies" class="max-w-3xl mx-auto bg-white p-6 mt-6 rounded-lg shadow-lg dark:bg-gray-700" >
+        <h2 class="text-xl font-bold mb-4">Competencies</h2>
+        <ul class="list-disc pl-5 space-y-2">
+            <li>Frontend Development (React, Tailwind CSS)</li>
+            <li>Backend Development (Node.js, Express)</li>
+            <li>Database Management (MongoDB, SQL)</li>
+            <li>Problem-Solving & Algorithms</li>
+        </ul>
+    </section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-3xl mx-auto bg-white p-6 mt-6 rounded-lg shadow-lg text-center dark:bg-gray-700">
+        <h2 class="text-xl font-bold mb-4">Contact</h2>
+        <p>Email: <a href="mailto:your-email@example.com" class="text-blue-500 hover:underline">your-email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" class="text-blue-500 hover:underline">Your Profile</a></p>
+        <p>GitHub: <a href="https://github.com/yourgithub" class="text-blue-500 hover:underline">Your GitHub</a></p>
+    </section>
+
+</body>
+</html>
